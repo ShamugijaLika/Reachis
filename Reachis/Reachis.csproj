@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BB42E6B-A160-4B96-BF5B-6A8CFFB5E06F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Reachis</RootNamespace>
+    <AssemblyName>Reachis</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calendars_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendars_Control.Designer.cs">
+      <DependentUpon>Calendars_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options_Control.Designer.cs">
+      <DependentUpon>Options_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profiles_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Profiles_Control.Designer.cs">
+      <DependentUpon>Profiles_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Task_items.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Task_items.Designer.cs">
+      <DependentUpon>Task_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tasks_Control.Designer.cs">
+      <DependentUpon>Tasks_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Turtl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Turtl.Designer.cs">
+      <DependentUpon>Turtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WinList.Designer.cs">
+      <DependentUpon>WinList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Calendars_Control.resx">
+      <DependentUpon>Calendars_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options_Control.resx">
+      <DependentUpon>Options_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profiles_Control.resx">
+      <DependentUpon>Profiles_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Task_items.resx">
+      <DependentUpon>Task_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks_Control.resx">
+      <DependentUpon>Tasks_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Turtl.resx">
+      <DependentUpon>Turtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinList.resx">
+      <DependentUpon>WinList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40-409612_rustic-arrow-clipart-png-bbcpersian-increase-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_328039.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_312968.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Var_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-male_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gears_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Щзешщты_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pomodoro-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_3129681.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post-1636807-1294327984.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dd83c6MU0AE9-Aq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water-Lilies_hromyh-_-nataliya-_1368427771.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink-water-lily-arnaldo-baez.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post-107076-1251224345.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\72b3bec388394e9023dbc0ed642n--kartiny-i-panno-odinokaya-kuvshinka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lulu-trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatabaseL.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DatabaseL_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DatabaseL.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\BackLog.png" />
+    <None Include="Resources\document.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\BackGr%282%29.png" />
+    <None Include="Resources\Pomodoro.png" />
+    <None Include="Resources\Turtl%283%291.png" />
+    <None Include="Resources\Turtl%283%29.png" />
+    <None Include="Resources\Turtl %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
